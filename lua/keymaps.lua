@@ -24,6 +24,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- move line
+keymap("n", "<M-j>", ":m .+1<CR>", opts)
+keymap("n", "<M-k>", ":m .-2<CR>", opts)
+
 -- New tab
 keymap("n", "te", ":tabedit", opts)
 -- 新しいタブを一番右に作る
