@@ -1,5 +1,8 @@
-require("config.lazy")
-require("config.lsp")
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- This is also a good place to setup other settings (vim.opt)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 vim.opt.termguicolors = true
 vim.opt.expandtab = true
@@ -11,6 +14,10 @@ vim.opt.softtabstop = 2
 vim.o.winborder = 'rounded'
 vim.o.number = true
 vim.o.relativenumber = true
+
+require("config.lazy")
+require("config.lsp")
+
 
 vim.keymap.set('i','jj','<esc>',{desc='escape'})
 vim.keymap.set('i','jk','<esc>',{desc='escape'})
