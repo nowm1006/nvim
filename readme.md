@@ -1,0 +1,5 @@
+- binary install
+    - lazy git 
+        - scoop
+    - blink.comp 
+        - cargo build from source
